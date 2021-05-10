@@ -1,4 +1,4 @@
-Algorithm for Tweet Extraction process: 
+**Algorithm for Tweet Extraction process:** 
 1.	Authentication and establishing connection with Twitter API
 a)	Invoke OAuth Authentication handler:
       i.	Pass consumer key and consumer secret to get Authorization token
@@ -39,7 +39,7 @@ g)	The stream is invoked multiple time until we get the required tweet count as 
 h)	Once the required count is fetched onData method returns false and the Stream is closed.
 i)	Finally, the list of streamed tweets is inserted into the Stream Collection of RawDb as key value pairs using insertMany operation
 ************************************************************************************************************************************************************
-Algorithm for Tweet Cleaning process: 
+**Algorithm for Tweet Cleaning process:** 
 Before the data is inserted into ProcessedDb the data is cleaned to remove:
 -	Special characters
 - URLs
